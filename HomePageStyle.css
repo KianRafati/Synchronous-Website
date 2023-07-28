@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: #0066cc;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.event-info {
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-top: 30px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky; /* Make the navigation bar sticky */
+    top: 0; /* Stick the navigation bar to the top of the viewport */
+    z-index: 100; /* Ensure the navigation bar is on top of other elements */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/*=============================================================================*/
+
+/* New styles for the contact section */
+.contact-section {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+/* Fix the color of the h2 inside contact section */
+.contact-section h2 {
+    color: #fff;
+}
+
+.container {
+    background-color: #333;
+    color: #fff;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-section {
+    margin-bottom: 20px; /* Add some spacing between the two sections if needed */
+}
+
+.contact-section h2 {
+    color: #fff; /* Ensure h2 text is visible against the dark background */
+}
+
+/*=============================================================================*/
+
+.slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Set the height of the slideshow container */
+    overflow: hidden; /* Hide any overflow from the images */
+}
+
+.slideshow-img {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slideshow-img.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.slideshow-prev,
+.slideshow-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.slideshow-prev {
+    left: 10px;
+}
+
+.slideshow-next {
+    right: 10px;
+}
+
+.logo {
+    max-width: 300px;
+    display: block; /* Make the image a block-level element */
+    margin-left: auto;
+    margin-right: auto;
+}
