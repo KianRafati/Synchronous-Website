@@ -60,33 +60,35 @@ nav a:hover {
 }
 
 /*=============================================================================*/
-
-/* New styles for the contact section */
-.contact-section {
-    flex: 1;
-    margin-bottom: 20px;
-}
-
-/* Fix the color of the h2 inside contact section */
-.contact-section h2 {
-    color: #fff;
-}
-
-.container {
+.grid-container{
     background-color: #333;
-    color: #fff;
-    margin: 0 auto;
-    padding: 20px;
+    color: #f2f2f2;
+    padding: 5%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Change the grid template to distribute the columns evenly */
+    grid-template-rows: auto auto;
+    column-gap: 50px;
 }
 
-.contact-section {
-    margin-bottom: 20px; /* Add some spacing between the two sections if needed */
+.centered-footer {
+    grid-column: 1 / span 3; /* Make the footer span across all three columns */
 }
 
-.contact-section h2 {
-    color: #fff; /* Ensure h2 text is visible against the dark background */
+
+#SUT-logo-footer,
+#Resana-logo-footer {
+    max-width: 50px;
+    float: right;
+    margin-top: 20px; /* Add some top margin to push the images down */
 }
 
+/* Clear the float to ensure that the grid items are pushed down properly */
+.grid-item::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 /*=============================================================================*/
 
 .slideshow-container {
