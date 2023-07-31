@@ -1,0 +1,47 @@
+[33mcommit ddd1e2266ad805075318feedbcac27ebd1ec6e80[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: unknown <k.rafati@outlook.com>
+Date:   Mon Jul 31 21:23:01 2023 +0330
+
+    made the staff page responsive
+
+[33mcommit c02c6ddfb2c72c096480e7cfc913eb0fd391b258[m
+Author: unknown <k.rafati@outlook.com>
+Date:   Mon Jul 31 18:04:48 2023 +0330
+
+    made the staff page responsive
+
+[33mcommit 644bd3c84c77b8a19ca4f94036e68c1c2b2d866f[m
+Author: unknown <k.rafati@outlook.com>
+Date:   Mon Jul 31 18:02:31 2023 +0330
+
+    made the staff page responsive
+
+[33mcommit 88f3c90512870a4b1d4e410c049fbbae3b336b59[m
+Author: unknown <k.rafati@outlook.com>
+Date:   Mon Jul 31 17:18:12 2023 +0330
+
+    created custom elements and shadow DOM
+
+[33mcommit 656f175e9660f2a1daa4b0ba97ed6ec42631f4a6[m
+Author: unknown <k.rafati@outlook.com>
+Date:   Sat Jul 29 14:54:55 2023 +0330
+
+    made it a little more responsive
+
+[33mcommit 4d06a1332db0ca2f60fa2a1fe4770c460141ee29[m
+Author: unknown <k.rafati@outlook.com>
+Date:   Sat Jul 29 14:22:53 2023 +0330
+
+    fixed footer
+
+[33mcommit 019f5776a90eda1d659081fe027088d0bdea6539[m
+Author: unknown <k.rafati@outlook.com>
+Date:   Fri Jul 28 20:33:28 2023 +0330
+
+    uploaded the first files
+
+[33mcommit b1faa763632a39ba098018ae39e4b44fdf729073[m
+Author: Kian Rafati Sajedi <k.rafati@outlook.com>
+Date:   Fri Jul 28 21:26:28 2023 +0330
+
+    Initial commit

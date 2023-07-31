@@ -4,16 +4,17 @@ template.innerHTML = `
         .staff-box {
             display: inline-block;
             min-width: 20vw;
+            max-width: 100px;
             width: 20vw;
             padding: 10px;
             margin: 10px;
-            border: #515151 solid 2px;
             border-radius: 10px;
             text-align: center; /* Center the content inside the staff-box */
         }
 
         .staff-box img {
-            width: 20vw;
+            width: 100%;
+            max-width: 150px;
             border-radius: 10px;
         }
 
