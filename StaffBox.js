@@ -1,30 +1,34 @@
 const template = document.createElement('template')
 template.innerHTML = `
     <style>
-        .staff-box{
-            width: 20%;
+        .staff-box {
+            display: inline-block;
+            min-width: 20vw;
+            width: 20vw;
             padding: 10px;
             margin: 10px;
             border: #515151 solid 2px;
             border-radius: 10px;
-            display: inline-block;
+            text-align: center; /* Center the content inside the staff-box */
         }
 
-        .staff-box img{
-            width: 100%;
+        .staff-box img {
+            width: 20vw;
             border-radius: 10px;
         }
 
-        .staff-box h3{
+        .staff-box h3 {
+            font-size: 2vw;
             margin: 1px;
         }
-        
-        .staff-box p{
+
+        .staff-box p {
             color: rgb(126, 126, 126);
             margin: 0;
-            font-size: 14px;
+            font-size: 2vw;
         }
     </style>
+
     <div class="staff-box">
         <img />
         <h3><slot name="name"></slot></h3>
