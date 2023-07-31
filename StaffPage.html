@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff</title>
+    <link rel="stylesheet" href="StaffPageStyle.css">
+    <link rel="icon" type="image/jpg" - href="./Images/Synchronous_Logo.png">
+    <script src="StaffBox.js"></script>
+</head>
+
+<body>
+    <nav>
+        <a href="HomePage.html">Home</a>
+        <a href="HomePage.html#register">Registration</a>
+        <a href="StaffPage.html">Staff</a>
+        <a href="#contact">Sponsers</a>
+        <a href="#contact">Contact</a>
+        <!-- Add more buttons as needed -->
+    </nav>
+
+    <div id="staff-section">
+        <p style="font-weight: bold;">
+            Event Directors
+        </p>
+
+        <staff-box name="Ali Akbari" avatar="Images/StaffImages/Ali-Akbari.jpg">
+            <div slot="position">Event director</div>
+        </staff-box>
+
+        <staff-box name="Asal Roudbari" avatar="Images/StaffImages/Asal-Roudbari.jpg">
+            <div slot="position">Event codirector</div>
+        </staff-box>
+    </div>
+
+    <div id="staff-section">
+        <p style="font-weight: bold;">
+            Sponsoring team
+        </p>
+
+        <staff-box name="Roham Kavei" avatar="Images/StaffImages/Roham-Kavei.jpg">
+            <div slot="position">member</div>
+        </staff-box>
+
+        <staff-box name="Iman Ahmadi" avatar="Images/StaffImages/Iman-Ahmadi.jpg">
+            <div slot="position">member</div>
+        </staff-box>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="grid-container" id="contact">
+        <div class="grid-item" id="contact" style="grid-column: 1 / span 2;">
+            <h2 style="color: #f2f2f2;">Contact Information</h2>
+            <p>
+                For any inquiries or assistance, please contact our event organizers:
+                <br>
+                Email: [Organizer Email]
+                <br>
+                Phone: [Organizer Phone Number]
+            </p>
+        </div>
+
+
+        <!-- Add images to the right side -->
+        <div>
+            <img src="./Images/SUT_Logo_White.png" alt="Image 1" id="SUT-logo-footer" class="grid-item">
+            <img src="./Images/Resana_Transparent_White.png" alt="Image 2" id="Resana-logo-footer" class="grid-item">
+            <!-- Add more images as needed  -->
+        </div> 
+
+        <footer class="grid-item centered-footer">
+            <p>&copy; 2023 Sharif University of Technology. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
