@@ -10,6 +10,7 @@ template.innerHTML = `
             margin: 10px;
             border-radius: 10px;
             text-align: center; /* Center the content inside the staff-box */
+            overflow: hidden; /* Hide any overflowing content */
         }
 
         .staff-box img {
@@ -21,12 +22,18 @@ template.innerHTML = `
         .staff-box h3 {
             font-size: 2vw;
             margin: 1px;
+            white-space: nowrap; /* Prevent text from wrapping */
+            overflow: hidden; /* Hide any overflowing content */
+            text-overflow: ellipsis; /* Truncate text with ellipsis (...) when it overflows */
         }
 
         .staff-box p {
             color: rgb(126, 126, 126);
             margin: 0;
             font-size: 2vw;
+            white-space: nowrap; /* Prevent text from wrapping */
+            overflow: hidden; /* Hide any overflowing content */
+            text-overflow: ellipsis; /* Truncate text with ellipsis (...) when it overflows */
         }
     </style>
 
