@@ -3,9 +3,9 @@ const observer = new IntersectionObserver(enteries => {
         if (entery.isIntersecting) {
             entery.target.classList.add('show')
         }
-        else {
-            entery.target.classList.remove('show')
-        }
+        // else {
+        //     entery.target.classList.remove('show')
+        // }
     })
 })
 
