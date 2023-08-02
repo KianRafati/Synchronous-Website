@@ -7,6 +7,8 @@
     <title>Synchronous 2023</title>
     <link rel="stylesheet" href="HomePageStyle.css">
     <link rel="icon" type="image/jpg" href="./Images/Synchronous_Logo.png">
+    <script defer src="app.js"></script>
+    <script defer src="Registration.js"></script>
 </head>
 
 <body>
@@ -19,10 +21,10 @@
         <!-- Add more buttons as needed -->
     </nav>
 
-    <h1>Synchronous 2023 - Resana</h1>
-    <img src="./Images/Synchronous_Logo.png" alt="Synchronous Logo" class="logo">
+    <h1 class="hidden">Synchronous 2023 - Resana</h1>
+    <img src="./Images/Synchronous_Logo.png" alt="Synchronous Logo" class="logo hidden">
 
-    <div class="slideshow-container">
+    <div class="slideshow-container hidden">
         <img class="slideshow-img active" src="./Images/HomePageImages/image1.jpg" alt="Image 1">
         <img class="slideshow-img" src="./Images/HomePageImages/image2.jpg" alt="Image 2">
         <img class="slideshow-img" src="./Images/HomePageImages/image3.jpg" alt="Image 3">
@@ -33,7 +35,7 @@
 
     <script src="HomePageLogic.js"></script>
 
-    <div class="event-info">
+    <div class="event-info hidden">
         <h2>About Synchronous 2023</h2>
         <p>
             Synchronous is a newly-formed annual contest held by Resana scientific association
@@ -50,7 +52,7 @@
         </p>
     </div>
 
-    <div class="event-info">
+    <div class="event-info hidden">
         <h2>Event Details</h2>
         <p><strong>Date:</strong> Synchronous is expected to premiere around mid-August</p>
         <p><strong>Time:</strong> [Event Time]</p>
@@ -65,11 +67,11 @@
         </p>
     </div>
 
-    <div class="event-info" id="register">
+    <div class="event-info hidden" id="register">
         <h2>Registration</h2>
         <p>
             To participate in Synchronous 2023, please fill out the online registration form available on our website:
-            [Registration Link].
+            <a href="#" onclick="triggerPopup()">Registration Link</a>.
         </p>
         <p>
             Registration deadline: [Registration Deadline Date]

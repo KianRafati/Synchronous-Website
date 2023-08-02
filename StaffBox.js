@@ -35,6 +35,7 @@ template.innerHTML = `
             overflow: hidden; /* Hide any overflowing content */
             text-overflow: ellipsis; /* Truncate text with ellipsis (...) when it overflows */
         }
+
     </style>
 
     <div class="staff-box">
