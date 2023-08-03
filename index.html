@@ -67,12 +67,190 @@
         </p>
     </div>
 
+    <!-- Add this div for the modal -->
+    <div class="modal" id="registrationModal">
+        <div class="modal-content" style="padding: 0;">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <!-- Add your registration form content here -->
+            <h2 style="margin-left: 3%;">Registration Form</h2>
+            <form id="registrationForm">
+                <label for="groupName" style="margin-left: 3%;">Group name*:</label>
+                <br>
+                <input type="text" id="groupName" name="groupName" placeholder="Resistor Rumble"
+                    style="border-radius: 5px; width: 80%; margin-left: 3%;" required>
+                <br>
+                <label for="leaderName" style="margin-left: 3%;">Team leader's name:</label>
+                <br>
+                <input type="text" id="leaderName" name="leaderName" placeholder="Captain Volta"
+                    style="border-radius: 5px; width: 80%; margin-left: 3%;">
+                <br>
+                <label for="memberCount" style="margin-left: 3%;">Number of Team Members*:</label>
+                <br>
+                <select id="memberCount" name="memberCount" onchange="generateMemberFields()" style="margin-left: 3%;" required>
+                    <option value="" disabled selected>-</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <br>
+                <div id="memberFields"></div>
+
+                <br>
+                <style>
+                    .submitBtn {
+                        border-radius: 5px;
+                        color: #000000;
+                    }
+
+                    .submitBtn:hover {
+                        color: #0066cc;
+                    }
+                </style>
+                <button type="submit" class="submitBtn" style="margin: 3%;">Submit</button>
+            </form>
+
+            <script>
+                function generateMemberFields() {
+                    var memberCount = parseInt(document.getElementById("memberCount").value);
+                    var memberFieldsDiv = document.getElementById("memberFields");
+                    memberFieldsDiv.innerHTML = "";
+
+                    for (var i = 1; i <= memberCount; i++) {
+                        let memberDiv = document.createElement("div")
+                        memberDiv.style.padding = "6%"
+
+                        if (i % 2 != 0){
+                            memberDiv.style.color = "white"
+                            memberDiv.style.backgroundColor = "#8b8b8b"
+                        }
+
+                        var memberLabel = document.createElement("label");
+                        memberLabel.textContent = "Member " + i + "'s full name*:";
+                        memberDiv.appendChild(memberLabel);
+
+                        var memberInput = document.createElement("input");
+                        memberInput.required = true
+                        memberInput.type = "text";
+                        memberInput.name = "memberName" + i;
+                        memberInput.placeholder = "Wattage Wizard";
+                        memberInput.style.borderRadius = "5px";
+                        memberInput.style.width = "80%";
+                        memberDiv.appendChild(memberInput);
+
+                        var lineBreak = document.createElement("br");
+                        memberDiv.appendChild(lineBreak);
+
+                        var memberLabel = document.createElement("label");
+                        memberLabel.textContent = "Member " + i + "'s National Number*:";
+                        memberDiv.appendChild(memberLabel);
+
+                        var lineBreak = document.createElement("br");
+                        memberDiv.appendChild(lineBreak);
+
+                        var memberInput = document.createElement("input");
+                        memberInput.type = "text";
+                        memberInput.required = true
+                        memberInput.name = "memberNNumber" + i;
+                        memberInput.placeholder = "8201233012";
+                        memberInput.style.borderRadius = "5px";
+                        memberInput.style.width = "80%";
+                        memberDiv.appendChild(memberInput);
+
+                        var lineBreak = document.createElement("br");
+                        memberDiv.appendChild(lineBreak);
+
+                        var memberLabel = document.createElement("label");
+                        memberLabel.textContent = "Member " + i + "'s Field of study*:";
+                        memberDiv.appendChild(memberLabel);
+
+                        var lineBreak = document.createElement("br");
+                        memberDiv.appendChild(lineBreak);
+
+                        var memberInput = document.createElement("input");
+                        memberInput.type = "text";
+                        memberInput.required = true
+                        memberInput.name = "memberField" + i;
+                        memberInput.placeholder = "Electrical Engineering";
+                        memberInput.style.borderRadius = "5px";
+                        memberInput.style.width = "80%";
+                        memberDiv.appendChild(memberInput);
+
+                        var lineBreak = document.createElement("br");
+                        memberDiv.appendChild(lineBreak);
+
+                        var memberLabel = document.createElement("label");
+                        memberLabel.textContent = "Member " + i + "'s University*:";
+                        memberDiv.appendChild(memberLabel);
+
+                        var lineBreak = document.createElement("br");
+                        memberDiv.appendChild(lineBreak);
+
+                        var memberInput = document.createElement("input");
+                        memberInput.type = "text";
+                        memberInput.required = true
+                        memberInput.name = "memberUni" + i;
+                        memberInput.placeholder = "Ampford University";
+                        memberInput.style.borderRadius = "5px";
+                        memberInput.style.width = "80%";
+                        memberDiv.appendChild(memberInput);
+
+                        var lineBreak = document.createElement("br");
+                        memberDiv.appendChild(lineBreak);
+
+                        var memberLabel = document.createElement("label");
+                        memberLabel.textContent = "Member " + i + "'s Certificate*:";
+                        memberDiv.appendChild(memberLabel);
+
+                        var lineBreak = document.createElement("br");
+                        memberDiv.appendChild(lineBreak);
+
+                        var memberInput = document.createElement("input");
+                        memberInput.type = "text";
+                        memberInput.required = true
+                        memberInput.name = "memberCert" + i;
+                        memberInput.placeholder = "bachelor-master";
+                        memberInput.style.borderRadius = "5px";
+                        memberInput.style.width = "80%";
+                        memberDiv.appendChild(memberInput);
+
+                        var lineBreak = document.createElement("br");
+                        memberDiv.appendChild(lineBreak);
+
+                        var memberLabel = document.createElement("label");
+                        memberLabel.textContent = "Member " + i + "'s Student Number*:";
+                        memberDiv.appendChild(memberLabel);
+
+                        var lineBreak = document.createElement("br");
+                        memberDiv.appendChild(lineBreak);
+
+                        var memberInput = document.createElement("input");
+                        memberInput.type = "text";
+                        memberInput.name = "memberStuNum" + i;
+                        memberInput.required = true
+                        memberInput.placeholder = "400231904";
+                        memberInput.style.borderRadius = "5px";
+                        memberInput.style.width = "80%";
+                        memberDiv.appendChild(memberInput);
+
+                        var lineBreak = document.createElement("br");
+                        memberDiv.appendChild(lineBreak);
+
+                        memberFieldsDiv.appendChild(memberDiv);
+                    }
+                }
+            </script>
+
+        </div>
+    </div>
+
     <div class="event-info hidden" id="register">
-        <h2>Registration</h2>
+        <h2>Registration Form</h2>
         <p>
             To participate in Synchronous 2023, please fill out the online registration form available on our website:
-            <a href="#" onclick="triggerPopup()">Registration Link</a>.
+            <a href="#" onclick="openModal(event)">Registration Link</a>.
         </p>
+
+
         <p>
             Registration deadline: [Registration Deadline Date]
         </p>
